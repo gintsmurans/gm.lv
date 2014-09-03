@@ -1,0 +1,86 @@
+
+<article class="s-project">
+    <h2>Summer Photoshoot</h2>
+    <div class="project-nav">
+        <a href="project-3.html" class="icon-arrow-left-5" title="Previous Project"></a>
+        <a href="work.html" class="icon-layout" title="All Projects"></a>
+        <a href="project-2.html" class="icon-arrow-right-5" title="Next Project"></a>
+    </div>
+
+    <div class="details">
+
+        <div>
+            <h4>Project Description</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, in accusantium vero id ducimus molestiae. Aut, possimus, cumque, laboriosam repellendus quo esse molestiae asperiores quos voluptas autem voluptate repellat maiores incidunt blanditiis ipsam neque quia dolor provident qui nihil officiis ipsa eaque modi dolorum perferendis deleniti ea. Sequi, ipsa, saepe harum dignissimos labore tempora distinctio aut modi officia veritatis vero?</p>
+        </div>
+
+        <ul>
+            <li>
+                <h4>Client</h4>
+                <p>Google Inc.</p>
+            </li>
+            <li>
+                <h4>Year</h4>
+                <p>2012</p>
+            </li>
+            <li>
+                <h4>Order</h4>
+                <p>Web Design, Web Development</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="slider-wrapper theme-default clearfix">
+        <div class="slider NivoSLider">
+            <img src="img/work/photography/1.jpg" data-thumb="img/work/photography/1.jpg" alt="" title="This is an image description." />
+            <img src="img/work/photography/2.jpg" data-thumb="img/work/photography/2.jpg" alt="" />
+            <img src="img/work/photography/3.jpg" data-thumb="img/work/photography/3.jpg" alt="" />
+            <img src="img/work/photography/4.jpg" data-thumb="img/work/photography/4.jpg" alt="" />
+            <img src="img/work/photography/5.jpg" data-thumb="img/work/photography/5.jpg" alt="" />
+            <img src="img/work/photography/6.jpg" data-thumb="img/work/photography/6.jpg" alt="" />
+            <img src="img/work/photography/7.jpg" data-thumb="img/work/photography/7.jpg" alt="" />
+            <img src="img/work/photography/8.jpg" data-thumb="img/work/photography/8.jpg" alt="" />
+            <img src="img/work/photography/9.jpg" data-thumb="img/work/photography/9.jpg" alt="" />
+        </div>
+    </div>
+    <!-- Slider End -->
+
+</article>
+
+<script>
+    var navigation = responsiveNav("#nav", {
+        animate: true,        // Boolean: Use CSS3 transitions, true or false
+        transition: 400,      // Integer: Speed of the transition, in milliseconds
+        label: "",            // String: Label for the navigation toggle
+        insert: "before",     // String: Insert the toggle before or after the navigation
+        customToggle: "",     // Selector: Specify the ID of a custom toggle
+        openPos: "relative",  // String: Position of the opened nav, relative or static
+        jsClass: "js",        // String: 'JS enabled' class which is added to <html> el
+        init: function(){},   // Function: Init callback
+        open: function(){},   // Function: Open callback
+        close: function(){}   // Function: Close callback
+    });
+
+    // Mixitup Filter Gallery
+    $(function(){
+        $('.work-grid').mixitup();
+    });
+
+    // Swipebox Gallery
+    $(function($) {
+        $(".swipebox").swipebox();
+    });
+
+    // Nivo Slider
+    $(window).load(function() {
+        $('.slider').nivoSlider({
+            effect: 'boxRandom',
+            slices: 15,
+            boxCols: 8,
+            boxRows: 4,
+            animSpeed: 500,
+            pauseTime: 3000,
+            controlNav: true
+        });
+    });
+</script>
