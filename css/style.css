@@ -858,7 +858,7 @@ ul {
     font-size: 0;
 }
 
-.projects li {
+.projects li.item {
     display: inline-block;
     vertical-align: top;
     width: 30%;
@@ -866,7 +866,7 @@ ul {
     margin-bottom: 25px;
 }
 
-.projects li:nth-child(3n) {
+.projects li.item:nth-child(3n) {
     margin-right: 0;
 }
 
@@ -875,6 +875,13 @@ ul {
 }
 
 .projects a {
+    color: #999;
+}
+.projects a:hover {
+    color: #2ecc71;
+}
+
+.projects a.image {
     display: block;
     height: 145px;
     overflow: hidden;
@@ -888,7 +895,7 @@ ul {
             transition: all 275ms ease-in;
 }
 
-.projects a:hover img, .projects div {
+.projects a.image:hover img, .projects div {
     -webkit-transform: scale(5);
        -moz-transform: scale(5);
         -ms-transform: scale(5);
@@ -896,9 +903,10 @@ ul {
             transform: scale(5);
 }
 
-.projects a {
+.projects a.image {
     position: relative;
     overflow: hidden;
+    border: 1px #E5E5E5 solid;
 }
 
 .projects div {
@@ -912,7 +920,7 @@ ul {
     overflow: hidden;
 }
 
-.projects a:hover div {
+.projects a.image:hover div {
     background: rgba(0, 0, 0, 0.5);
     opacity: 1;
     -webkit-transform: scale(1);
@@ -940,6 +948,16 @@ ul {
 
 .projects figcaption p {
     font-size: 1.2rem;
+}
+
+.projects figcaption .year{
+    margin: 0 0 -10px 0;
+    font-weight: bold;
+}
+.projects .skills li{
+    line-height: 20px;
+    font-size: 1.1rem;
+    margin-right: 5px;
 }
 
 

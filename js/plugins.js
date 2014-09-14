@@ -9,12 +9,12 @@ $(document).ready(function() {
 
     content.hide();
 
-    $(document).on('click', '.nav a, .projects a, .project-nav a, .p-details a', function(e) {
-        if ($(this).closest('li').hasClass('active')) {
+    $(document).on('click', '.nav a, .projects a, .project-nav a, .p-details a', function(e){
+        var url = $(this).data('url');
+        if ($(this).closest('li').hasClass('active') || typeof url == 'undefined')
+        {
             return;
         }
-
-        var url = $(this).data('url');
 
         $('.active').removeClass('active');
         $("a[data-url*='" + url + "']").closest('li').addClass('active');
@@ -49,6 +49,17 @@ $(document).ready(function() {
         });
     });
 
+    // Stop empty links from firing up
+    $(document).on('click', 'a', function(e){
+        var link = this.href.replace('#', '');
+        link = link.replace(location.protocol + '//' + location.hostname, '');
+        link = link.replace('/', '');
+
+        if (link == '')
+        {
+            e.preventDefault();
+        }
+    });
 
     var page = location.hash.replace('#', '');
     if (page == '')
