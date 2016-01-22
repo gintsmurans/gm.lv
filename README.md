@@ -1,4 +1,4 @@
-http://gm.lv
+http://portfolio.gm.lv
 =====
 
-Gints Murans personal website
+Portfolio page
