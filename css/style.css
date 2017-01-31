@@ -69,12 +69,12 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat';
+    font-family: 'Open Sans', Calibri, sans-serif;
 }
 
 ::selection {
     background: #2ecc71;
-    color: white;   
+    color: white;
 }
 
 ::-moz-selection {
@@ -142,7 +142,7 @@ ul {
 }
 
 .nav span {
-    font-family: 'Montserrat';
+    font-family: 'Open Sans', Calibri, sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -255,7 +255,7 @@ ul {
 /* ---------------------------------------- */
 
 .error {
-    font-family: 'Montserrat';
+    font-family: 'Open Sans', Calibri, sans-serif;
     text-align: center;
 }
 
@@ -618,7 +618,7 @@ ul {
 
 .gridfilter {
     width: 100%;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
 }
 
 .gridfilter li {
@@ -740,7 +740,7 @@ ul {
   top: 0 !important;
 }
 
-#swipebox-action #swipebox-prev, 
+#swipebox-action #swipebox-prev,
 #swipebox-action #swipebox-next,
 #swipebox-action #swipebox-close {
   background-image: url("../img/work/icons.png");
@@ -1066,7 +1066,7 @@ ul {
 
 .nivo-main-image {
     display: block !important;
-    position: relative !important; 
+    position: relative !important;
     width: 100% !important;
 }
 
@@ -1083,8 +1083,8 @@ ul {
     margin: 0;
     z-index: 6;
     display: none;
-    background: white; 
-    filter: alpha(opacity=0); 
+    background: white;
+    filter: alpha(opacity=0);
     opacity: 0;
 }
 
@@ -1223,8 +1223,8 @@ ul {
     margin-bottom: 5px;
 }
 
-.contact form input[type="text"], 
-.contact form input[type="email"], 
+.contact form input[type="text"],
+.contact form input[type="email"],
 .contact form textarea {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -1245,47 +1245,47 @@ ul {
     -o-transition: all 0.3s;
 }
 
-.contact form input[type="text"]:focus, 
-.contact form input[type="email"]:focus, 
-.contact form textarea:focus { 
+.contact form input[type="text"]:focus,
+.contact form input[type="email"]:focus,
+.contact form textarea:focus {
     border: 2px solid #2ecc71;
     color: #999;
 }
 
-.contact form input[type="text"]:required:valid, 
-.contact form input[type="email"]:required:valid, 
-.contact form textarea:required:valid { 
+.contact form input[type="text"]:required:valid,
+.contact form input[type="email"]:required:valid,
+.contact form textarea:required:valid {
     border: 2px solid #2ecc71;
     color: #2ecc71;
     background: url('../img/valid-icon.svg') no-repeat;
     background-position: 98%;
-} 
+}
 
-.contact form input[type="text"]:required:invalid, 
-.contact form input[type="email"]:required:invalid, 
+.contact form input[type="text"]:required:invalid,
+.contact form input[type="email"]:required:invalid,
 .contact form textarea:required:invalid {
     background: url('../img/invalid-icon.svg') no-repeat;
     background-position: 98%;
 }
 
-.contact form textarea:required:valid, 
-.contact form textarea:required:invalid { 
+.contact form textarea:required:valid,
+.contact form textarea:required:invalid {
     background-position: 98% 8px;
-} 
+}
 
 .contact form textarea {
     font-family: 'Open Sans';
     font-weight: normal;
     resize: vertical;
     height: 100px;
-} 
+}
 
 .contact form label {
     color: black;
     font-size: 14px;
     font-weight: normal;
     letter-spacing: 1px;
-} 
+}
 
 .budgetrange {
     margin-bottom: 25px;
@@ -1324,23 +1324,23 @@ ul {
     color: white;
 }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #909090;
-} 
+}
 
-input:-moz-placeholder, textarea:-moz-placeholder { 
+input:-moz-placeholder, textarea:-moz-placeholder {
     color: #909090;
-} 
+}
 
-input::-moz-placeholder, textarea::-moz-placeholder { 
+input::-moz-placeholder, textarea::-moz-placeholder {
     color: #909090;
-} 
+}
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     color: #909090;
-} 
+}
 
-.contact form .required { 
+.contact form .required {
     color: #2ecc71;
     margin-left: 4px;
 }
@@ -1360,9 +1360,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     -moz-transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
-} 
+}
 
-.contact form input[type="submit"]:hover { 
+.contact form input[type="submit"]:hover {
     cursor: pointer;
 }
 

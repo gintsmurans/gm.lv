@@ -9,7 +9,7 @@ $error      = '';
 
 $address = "gm@gm.lv";
 
-$e_subject = "New message from {$name}";
+$e_subject = "New message from {$name} via portfolio page";
 
 $e_body = "You have a new message from: $name" . PHP_EOL . PHP_EOL;
 $e_content = $text . PHP_EOL . PHP_EOL;
