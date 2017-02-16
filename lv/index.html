@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gints Murāns | Web and iOS Developer</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Add your CSS files here -->
+    <link rel="stylesheet" href="../css/normalize.min.css">
+    <link rel="stylesheet" href="../css/style.css?1">
+    <link rel="stylesheet" href="../css/nivo/default.css">
+    <link rel="stylesheet" href="../css/themes/green.css">
+
+    <!-- Add your Fonts here -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="logo"><img src="../img/logo.svg" alt="Logo"></div>
+
+    <div class="social">
+        <a href="http://facebook.com/gints.murans" class="icon-facebook" title="Facebook"></a>
+        <a href="http://twitter.com/gintsmurans" class="icon-twitter" title="Twitter"></a>
+        <a href="https://github.com/gintsmurans" class="icon-github" title="GitHub"></a>
+    </div>
+    <!-- Social Icons End -->
+
+    <header>
+        <nav id="nav">
+            <ul class="nav">
+                <li><img src="../img/logo.svg" alt="My Logo"></li>
+                <li><a href="#resume" class="icon-list" data-url="../lv/resume.html"><span>CV</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <section class="content"></section>
+    <!-- Content End -->
+
+</div>
+<!-- Container End -->
+
+<!-- Scripts -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script src="../js/plugins.js"></script>
+<script src="../js/jquery.mixitup.js"></script>
+<script src="../js/jquery.swipebox.js"></script>
+<script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
+
+<script>
+      var navigation = responsiveNav("#nav", {
+        animate: true,        // Boolean: Use CSS3 transitions, true or false
+        transition: 400,      // Integer: Speed of the transition, in milliseconds
+        label: "",            // String: Label for the navigation toggle
+        insert: "before",     // String: Insert the toggle before or after the navigation
+        customToggle: "",     // Selector: Specify the ID of a custom toggle
+        openPos: "relative",  // String: Position of the opened nav, relative or static
+        jsClass: "js",        // String: 'JS enabled' class which is added to <html> el
+        init: function(){},   // Function: Init callback
+        open: function(){},   // Function: Open callback
+        close: function(){}   // Function: Close callback
+      });
+</script>
+
+</body>
+</html>
