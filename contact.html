@@ -1,5 +1,5 @@
 
-<div id="map"></div>
+<!-- <div id="map"></div> -->
 
 <article class="contact">
 
@@ -16,7 +16,7 @@
         <input type="submit" name="submit" id="submit" value="Send">
     </form>
     <iframe name="contactform_result" class="contactform_result" src="about:blank" frameborder="0">
-        
+
     </iframe>
 
 </article>
@@ -46,21 +46,21 @@
 
 <!-- Add your scripts here -->
 <script>
-    function initialize() {
-      var myLatlng = new google.maps.LatLng(57.5379175, 25.4229555);
-      var mapOptions = {
-        zoom: 14,
-        center: myLatlng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      }
-      var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    // function initialize() {
+    //   var myLatlng = new google.maps.LatLng(57.5379175, 25.4229555);
+    //   var mapOptions = {
+    //     zoom: 14,
+    //     center: myLatlng,
+    //     mapTypeId: google.maps.MapTypeId.ROADMAP
+    //   }
+    //   var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-      var marker = new google.maps.Marker({
-          position: myLatlng,
-          map: map,
-          title: 'Visit us here!'
-      });
-    }
+    //   var marker = new google.maps.Marker({
+    //       position: myLatlng,
+    //       map: map,
+    //       title: 'Visit us here!'
+    //   });
+    // }
 
-    initialize();
+    // initialize();
 </script>
