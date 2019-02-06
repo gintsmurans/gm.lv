@@ -64,7 +64,7 @@ $(document).ready(function() {
     var page = location.hash.replace('#', '');
     if (page == '')
     {
-        page = 'home';
+        page = 'resume';
     }
 
     $("a[data-url*='" + page + "']").trigger('click');
